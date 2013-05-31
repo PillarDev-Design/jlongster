@@ -24,7 +24,7 @@
     function get(url){ return resourceCache[url]; };
     function isReady(){
         var ready = true;
-        far(var k in resourceCache){
+        for(var k in resourceCache){
             if(resourceCache.hasOwnProperty(k) && !resourceCache[k]){
                 ready = false;
             }

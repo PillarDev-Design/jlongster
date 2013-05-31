@@ -16,7 +16,7 @@
                 key = 'DOWN'; break;
             default:
                 // Convert ASCII codes to letters
-                key = String.formCharCode(code);
+                key = String.fromCharCode(code);
         }
         pressedKeys[key] = status;
     };
